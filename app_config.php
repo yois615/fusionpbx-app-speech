@@ -44,5 +44,13 @@
 		$apps[$x]['default_settings'][$y]['default_setting_enabled'] = "false";
 		$apps[$x]['default_settings'][$y]['default_setting_description'] = "Text to Speech API URL";
 		$y++;
+		$apps[$x]['default_settings'][$y]['default_setting_uuid'] = "d36f50bb-9c72-41b6-b415-4754778447bc";
+		$apps[$x]['default_settings'][$y]['default_setting_category'] = "speech";
+		$apps[$x]['default_settings'][$y]['default_setting_subcategory'] = "region";
+		$apps[$x]['default_settings'][$y]['default_setting_name'] = "text";
+		$apps[$x]['default_settings'][$y]['default_setting_value'] = "";
+		$apps[$x]['default_settings'][$y]['default_setting_enabled'] = "false";
+		$apps[$x]['default_settings'][$y]['default_setting_description'] = "Azure Speech resource region (for example eastus). Required for the azure engine.";
+		$y++;
 
 ?>
