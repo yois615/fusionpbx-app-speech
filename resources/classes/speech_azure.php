@@ -112,6 +112,9 @@ class speech_azure implements speech_interface {
 				error_log('Azure TTS returned an invalid voice entry.');
 				return [];
 			}
+			if ($voice['Locale'] !== 'en-US') {
+				continue;
+			}
 			$name = $voice['DisplayName'] ?? $voice['ShortName'];
 			if (!is_string($name)) {
 				error_log('Azure TTS returned an invalid voice display name.');

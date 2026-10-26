@@ -32,7 +32,8 @@ regional endpoints (`https://<region>.tts.speech.microsoft.com`); `api_url` is
 not used. Private endpoints, sovereign clouds, custom voice deployments, and
 Azure OpenAI deployments are not supported by this engine.
 
-Available voices are fetched from Azure for the configured region. Select a
+Available voices are fetched from Azure for the configured region and filtered
+to US English (`en-US`) only. Select a
 voice such as `en-US-JennyNeural`; its short name determines the language.
 Text is escaped as plain text inside SSML. Speed control supports 0.5x to 2.0x.
 There is no separate model selector or translation support.
